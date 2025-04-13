@@ -8,12 +8,13 @@ Game Designer: Dani Castillo
 Game Title: Chaotic Cook-Off!
 
 GitLab Repository Link: https://coursework.cs.duke.edu/computer-game-design-spring-2025/danielaerica-castillo/unitygamejam
+https://github.com/danmelcas/Chaotic-Cook-Off-/edit/main/README.md
 
 ### Elevator Pitch
 
 Provide a concise 1-3 sentence summary of your game, highlighting its core concept and what makes it unique.
 
-Chaotic Cook-Off is a cooking simulator. 
+Chaotic Cook-Off is a cooking game where players must assemble and serve dishes swiftly while managing random power-ups and debuffs. This is a demo of the single player version. 
 
 ### Theme Interpretation
 
