@@ -1,0 +1,514 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &787750832327111440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7830410351682959396}
+  - component: {fileID: 4481759123475473480}
+  - component: {fileID: 6819790577700899597}
+  - component: {fileID: 7472986281591092407}
+  m_Layer: 0
+  m_Name: Stack_ Salmon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7830410351682959396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787750832327111440}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.7782345, y: 0.24350786, z: 3.994213}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7853088977569797119}
+  - {fileID: 3660748992749212307}
+  - {fileID: 7429559450309942244}
+  - {fileID: 6248935134082889868}
+  - {fileID: 4458457817463753920}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4481759123475473480
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787750832327111440}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7110865, y: 0.47745872, z: 0.46101928}
+  m_Center: {x: 0.006538272, y: 0.23396313, z: 0.02905929}
+--- !u!114 &6819790577700899597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787750832327111440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f613fcba8ec16214b8a36dea1e427e06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stackObject: {fileID: 584388019320914752, guid: c7d1c494e68a9d941aee049de0611c9d,
+    type: 3}
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6819790577700899597}
+        m_TargetAssemblyTypeName: Stack, Assembly-CSharp
+        m_MethodName: GetFromStack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6819790577700899597}
+        m_TargetAssemblyTypeName: Stack, Assembly-CSharp
+        m_MethodName: EnableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onHoverExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6819790577700899597}
+        m_TargetAssemblyTypeName: Stack, Assembly-CSharp
+        m_MethodName: DisableOutline
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7472986281591092407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787750832327111440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!1001 &1503546638757530997
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7830410351682959396}
+    m_Modifications:
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.321
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273388034709499715, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_Name
+      value: Salmon plastic tray (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5848254383532640662, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+--- !u!4 &6248935134082889868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1503546638757530997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2701629958388264477
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7830410351682959396}
+    m_Modifications:
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273388034709499715, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_Name
+      value: Salmon plastic tray (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5848254383532640662, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+--- !u!4 &7429559450309942244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2701629958388264477}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3359333510786754054
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7830410351682959396}
+    m_Modifications:
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.096
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273388034709499715, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_Name
+      value: Salmon plastic tray
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5848254383532640662, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+--- !u!4 &7853088977569797119 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 3359333510786754054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8117897787547871082
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7830410351682959396}
+    m_Modifications:
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273388034709499715, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_Name
+      value: Salmon plastic tray (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5848254383532640662, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+--- !u!4 &3660748992749212307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8117897787547871082}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9203837106490341689
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7830410351682959396}
+    m_Modifications:
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273388034709499715, guid: 14e2f098e1f539240a7959e6492fd3e6,
+        type: 3}
+      propertyPath: m_Name
+      value: Salmon plastic tray (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5848254383532640662, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14e2f098e1f539240a7959e6492fd3e6, type: 3}
+--- !u!4 &4458457817463753920 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4784237698583361017, guid: 14e2f098e1f539240a7959e6492fd3e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 9203837106490341689}
+  m_PrefabAsset: {fileID: 0}
